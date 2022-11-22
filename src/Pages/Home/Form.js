@@ -9,24 +9,24 @@ const Form = () => {
         }}>
 
 
-            <div class="w-full max-w-xs justify-center items-center m-auto">
+            <div className="w-full max-w-xs justify-center items-center m-auto">
                 <div className='px-8 pt-6 text-center'>
                     <h4 className='text-primary font-bold'>Contact Us</h4>
                     <h2 className='text-white'>Stay Connected with us</h2>
                 </div>
-                <form class=" px-8 pt-6 pb-8 mb-4">
-                    <div class="mb-4">
+                <form className=" px-8 pt-6 pb-8 mb-4">
+                    <div className="mb-4">
 
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email Address" />
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Email Address" />
                     </div>
-                    <div class="mb-4">
+                    <div className="mb-4">
 
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Subject" />
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Subject" />
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
 
                         <textarea
-                            class="
+                           className="
                             form-control
                             block
                             w-full
@@ -48,7 +48,7 @@ const Form = () => {
                             placeholder="Message"
                         ></textarea>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div className="flex items-center justify-center">
                         <PrimaryButton>Submit</PrimaryButton>
                     </div>
                 </form>

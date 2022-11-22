@@ -2,8 +2,8 @@ import React from 'react';
 
 const Review = ({ review }) => {
     return (
-        <div className="card max-w-lg bg-base-100 shadow-xl">
-            <div className="card-body">
+        <div  className="card max-w-lg bg-base-100 shadow-xl">
+            <div  className="card-body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat architecto voluptates sunt odit corrupti.</p>
                 <div className='flex items-center'>
                     <div className='avatar'>
