@@ -13,6 +13,7 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
         event.preventDefault();
         const slot = event.target.slot.value;
         console.log(_id, name, slot);
+
         const booking = {
             treatmentId: _id,
             treatment: name,
@@ -24,10 +25,10 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
 
         }
 
-        fetch('http://localhost:5000/', {
+        fetch('http://localhost:5000/booking', {
             method: 'POST',
-            headers: {
-                'content-typre': 'application/json'
+            headers: { 
+                'content-type': 'application/json'
             },
             body: JSON.stringify(booking)
         })
@@ -35,6 +36,12 @@ const BookingModal = ({ date, treatment, setTreatment }) => {
             .then(data => {
                 // to close the modal
                 console.log(data);
+                if(data.success){
+                    toast(`Appointment is set, ${formattedDate} at ${slot}`)
+                }
+                else{
+                    toast.error(`Already have an Appointment on ${data.booking?.date} at ${data.booking?.slot}`)
+                }
                 setTreatment(null);
             })
 
